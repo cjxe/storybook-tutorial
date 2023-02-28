@@ -1,12 +1,17 @@
 import React from 'react';
+import Center from '../Center/Center';
 import Button from './Button';
 
-// adds an entry in the side nav
 // A1: We can also the master component with `args` by adding the `args` object
+// # Decorators
+// Decorators are components that wrap a story
+// i.e., <Center> {component} </Center>
 export default {
   title: 'Components/Button',
-  component: Button
+  component: Button,
+  decorators: [story => <Center>{story()}</Center>]
 }
+
 
 // renders the named exports (= components)
 export const Primary = () => <Button variant='primary'>Primary</Button>
