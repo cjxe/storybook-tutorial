@@ -1,11 +1,9 @@
 import React from 'react';
 import './Input.css'
 
-function Input({ size, children }) {
+function Input({ size }) {
   return ( 
-    <input className={`input ${size}`}>
-      {children}
-    </input>
+    <input className={`input ${size}`}></input>
    );
 }
 
