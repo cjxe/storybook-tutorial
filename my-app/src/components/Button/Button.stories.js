@@ -3,7 +3,7 @@ import Button from './Button';
 
 // adds an entry in the side nav
 export default {
-  title: 'Atoms/Button',
+  title: 'Components/Button',
   component: Button
 }
 
